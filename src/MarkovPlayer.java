@@ -37,9 +37,11 @@ public class MarkovPlayer implements Player {
     }
 
     private int getMoveToBeat(int prev) {
+        //get move to beat
         if (prev == RPS.ROCK) return RPS.PAPER;
         if (prev == RPS.SCISSORS) return RPS.ROCK;
         return RPS.SCISSORS;
+
     }
 
     private int getRowSum(int[] arr) {
